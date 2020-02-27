@@ -1,0 +1,104 @@
+.box-shadow {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    margin-left: 1em;
+    box-shadow: 0 6px 7px #afafaf;
+  }
+  
+  .box-header {
+    height: 180px;
+    padding-top: 0;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+  }
+  .box-footer {
+    height: 70px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .inner-box {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    margin-left: 5em;
+    box-shadow: inset 0 0 32px red;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box-item {
+    font-size: 28px;
+  }
+
+  {/* Handbook style */}
+
+input:disabled{
+  background-color: green;
+}
+
+/* input[type="text"] {
+  background-color: pink;
+} */
+
+.spec-input {
+  background-color: yellow;
+}
+ul {
+
+}
+
+.specficity:last-child {
+  /* background-color: black; */
+}
+
+.pseudo-middle::after {
+  background-color: black;
+}
+.pseudo-middle::first-letter {
+  background-color: black;
+}
+
+  /* Calc style */
+.css-calc {
+  position: relative
+}
+.calc-one {
+  background-color: yellow;
+  border: 2px solid black;
+  font-size: calc(10%)
+}
+
+.calc-two {
+  /* position: absolute; */
+  background-color: red;
+  /* left: 40px; */
+  width: calc(90% + 5%);
+}
+
+.calc-form {
+  width: calc(100% / 6);
+  padding: 4px;
+  background-color: blueviolet;
+}
+
+.calc-input {
+  display: block;
+  width: calc(100% - 1em)
+}
+
+.css-display-item {
+  border: 1px solid red
+}
+
+.css-inline {
+  display: inline-block
+}

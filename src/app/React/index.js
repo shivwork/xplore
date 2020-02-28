@@ -7,6 +7,8 @@ import StyledComp from "../React/StyledComp/StyledComp";
 import Controlled from "../React/Form/Controlled";
 import UnControlled from "../React/Form/UnControlled";
 import ContextApi from "../React/ContextApi/ContextApi";
+import Ref from "../React/Ref/Ref";
+import ClassLifecycle from "../React/LifecycleMethod/Lifecycle";
 class ReactComponent extends React.PureComponent {
   render() {
     return (
@@ -14,6 +16,12 @@ class ReactComponent extends React.PureComponent {
         <ul className="sidebar">
           <li>
             <Link to="/react/contextapi">Context Api</Link>
+          </li>
+          <li>
+            <Link to="/react/ref">Ref</Link>
+          </li>
+          <li>
+            <Link to="/react/lifecycle">Lifecycle</Link>
           </li>
         </ul>
         <div className="body">
@@ -24,6 +32,8 @@ class ReactComponent extends React.PureComponent {
               component={() => <div>React Dashboard</div>}
             />
             <Route path="/react/contextapi" component={ContextApi} />
+            <Route path="/react/ref" component={Ref} />
+            <Route path="/react/lifecycle" component={ClassLifecycle} />
           </Switch>
         </div>
       </div>

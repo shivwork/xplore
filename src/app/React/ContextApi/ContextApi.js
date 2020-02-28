@@ -1,13 +1,13 @@
 import React from "react";
 
-const ButtonTypeContext = React.createContext("cancle");
+const ButtonTypeContext = React.createContext("cancel");
 
 class ContextApi extends React.PureComponent {
   constructor(props) {
     super(props);
   }
   render() {
-    const a = { name: "shiv", lName: "roy" };
+    const a = { fName: "shiv", lName: "roy" };
     return (
       <div>
         Learn Context Api
@@ -26,7 +26,6 @@ const MoleculeContext = () => (
 );
 
 const ButtonConsumer = ButtonTypeContext.Consumer;
-console.log("ButtonConsumer : ->", ButtonConsumer);
 const ButtonContext = () => (
   <ButtonConsumer>
     {value => (
